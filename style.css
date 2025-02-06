@@ -5,11 +5,63 @@
     box-sizing: border-box;
 }
  body{
-    background-color: blueviolet;
+    background:purple;
+
  }
 
  .quizapp{
     background-color: white;
     width: 90%;
     max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
  }
+
+ .quizapp h1{
+   font-size: 40px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: #001e4d;
+   font-weight: 800;
+   border-bottom: 1px solid #001e4d;
+   text-align: center;
+   padding-bottom: 25px;
+}
+.quizapp h2{
+   font-family: 30px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: #001e4d;
+   font-weight: 800;
+   text-align: center;
+   padding-top: 10px;
+}
+.btn{
+   background-color: white;
+   color: #222;
+   font-weight: 500;
+   width: 100%;
+   border: 1px solid #001e4d;
+   padding: 10px ;
+   margin: 10px 0;
+   text-align: left;
+   border-radius: 7px;
+   cursor: pointer;
+   transition: all 0.5;
+}
+.btn:hover{
+   background-color: #272323;
+   color: white;
+}
+
+#next-btn{
+   background-color: #001e4d;
+   color: white;
+   border: 0;
+   padding: 10px;
+   font-weight: 600;
+   width: 100px;
+   margin: 20px auto 0;
+   border-radius: 5px;
+   cursor: pointer;
+   display: none;
+}
