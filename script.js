@@ -51,14 +51,18 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerbutton = document.getElementById("answerbutton");
 const nextbutton = document.getElementById("next-btn");
+let resultCard = document.getElementsByClassName("container");
 const circularProgress = document.querySelector(".circular-progress");
 const progressValue = document.querySelector(".progress-value");
 
 let currentQuestionIndex = 0;
 let score = 0;
 
+resultCard[0].style.display="none";
+
 
 function Quiz() {
+
     currentQuestionIndex = 0;
     score = 0;
     nextbutton.innerHTML = "Next";
@@ -113,6 +117,7 @@ function selectAnswer(e) {
 
 function showScore() {
     resetstate();
+    resultCard[0].style.display ="flex";
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}! `;
     let progressStartValue = 0;
     let progressEndValue = (score / questions.length) * 100;
@@ -131,6 +136,7 @@ function showScore() {
     nextbutton.style.display = "block";
 }
 function handleNextButton() {
+    
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         startQuestion();
