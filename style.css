@@ -84,6 +84,9 @@ body {
    background-color: rgb(236, 87, 87);
 }
 
+.hidden {
+   display: none;
+}
 .container {
    width: 420px;
    padding: 50px 0;
@@ -95,7 +98,7 @@ body {
    flex-direction: column;
    row-gap: 30px;
    align-items: center;
-   /* display: none; */
+   
 
 }
 
@@ -112,11 +115,8 @@ body {
    
 }
 
-.hidden {
-   display: none;
-}
 
-.circular-progress::before {
+.circular-progress::before{
    content: "";
    position: absolute;
    height: 210px;
@@ -125,7 +125,7 @@ body {
    background-color: #fff;
 }
 
-.progress-value {
+.progress-value{
    position: relative;
    font-size: 50px;
    font-weight: 600;
