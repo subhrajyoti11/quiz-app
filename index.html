@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <div class="quizapp">
-    <h1>QUIZ APPLICATION</h1>
+    <div class="quizapp">
+        <h1>QUIZ APPLICATION</h1>
         <div class="quiz">
             <h2 id="question">Test your knowledge</h2>
             <div id="answerbutton">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
             <button id="next-btn">Next</button>
         </div>
-   </div> 
-   <script src="script.js"></script>
+        <!--cirular progress bar -->
+        <div id="result-container" class="hidden">
+            <h2>Your Score</h2>
+            <div class="progress-circle" id="progress-circle">
+                <span id="score-percentage">0%</span>
+
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="circular-progress">
+                <span class="progress-value">0%</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
